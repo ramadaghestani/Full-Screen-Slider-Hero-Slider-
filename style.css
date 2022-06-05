@@ -1,0 +1,52 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.container .slider-holder{
+	display: grid;
+	grid-template-columns: repeat(3, 100%);
+	animation: slide 15s ease infinite;
+}
+.wrapper{
+	overflow: hidden;
+}
+.container #slider-image-1{
+	background: url('./photo/1imeg.jpg');	
+	background-size: cover;
+	height: 100vh;
+
+}
+.container #slider-image-2{
+	background: url('./photo/2imeg.jpg');	
+	background-size: cover;
+	height: 100vh;
+
+}
+.container #slider-image-3{
+	background: url('./photo/3imeg.jpg');	
+	background-size: cover;
+	height: 100vh;
+
+}.container .button-holder{
+	position: absolute;
+	bottom: 0%;
+	left: 45%;
+}
+.container .button-holder .dots{
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	border-radius: 3rem;
+	background-color: lightcyan;
+	margin: .4rem .3rem;
+}
+@keyframes slide{
+	0%{transform:translate(0%)}
+	23%{transform:translate(0%)}
+	33%{transform:translate(-100%)}
+	56%{transform:translate(-100%)}
+	66%{transform:translate(-200%)}
+	99%{transform:translate(-200%)}
+	100%{transform:translate(0%)}
+}
